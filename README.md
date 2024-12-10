@@ -15,7 +15,7 @@ pip install pandas
 
 # Run
 Instead of **[dataset]**, substitute **Amazon-CD**, **Gowalla**, **Yelp** to run the code.
-##### NoDE-LightGCN
+##### DNA-LightGCN
 ```
-python main_NoDE-LightGCN.py --dataset [dataset]
+python main_DNA-LightGCN.py --dataset [dataset]
 ```
