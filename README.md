@@ -1,4 +1,4 @@
-# [WWW '25] GCNs Meet Long-Tail: Embedding Norm Bias in GCN-Based Recommendations
+# [Under review] GCNs Meet Long-Tail: Embedding Norm Bias in GCN-Based Recommendations
 
 # Requirements
 python 3.8.18, cuda 11.8, and the following installations:
