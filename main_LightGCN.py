@@ -1,6 +1,5 @@
 import torch
 from torch_geometric.utils import degree
-from torch_geometric.seed import seed_everything
 
 from tqdm import tqdm
 import argparse
@@ -25,9 +24,19 @@ parser.add_argument('--epochs', type=int, default=1000)
 args = parser.parse_args()
 #############################################################################
 
-seed_everything(args.random_seed)
 gpu = 'cuda:'+str(args.gpu_id)
 device = torch.device(gpu if torch.cuda.is_available() else 'cpu')
+seed = args.random_seed
+random.seed(seed)
+np.random.seed(seed)
+os.environ['PL_GLOVAL_SEED'] = str(seed)
+np.random.seed(seed)
+torch.manual_seed(seed)
+torch.cuda.manual_seed_all(seed)
+if torch.cuda.is_available():
+    torch.backends.cudnn.benchmark = False 
+    torch.backends.cudnn.deterministic = True
+torch.use_deterministic_algorithms = True
 
 print('##############################')
 print('This model is LightGCN!')
