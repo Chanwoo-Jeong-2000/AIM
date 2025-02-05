@@ -1,4 +1,4 @@
-# [Under review]
+# [Under review] Mitigating Embedding Imbalances in GCN-based Recommender Systems
 
 # Requirements
 python 3.8.18, cuda 11.8, and the following installations:
