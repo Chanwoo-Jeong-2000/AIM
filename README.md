@@ -1,5 +1,7 @@
 # [Under review] Improving Angular Embeddings in GCN for Recommendations
 
+We propose AIM (Angular embedding Improvement and Magnitude balancing), a simple yet effective method that enhances angular embedding and mitigates magnitude imbalance.
+
 # Requirements
 python 3.8.18, cuda 11.8, and the following installations:
 ```
